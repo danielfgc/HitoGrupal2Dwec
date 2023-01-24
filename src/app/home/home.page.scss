@@ -1,3 +1,5 @@
+
+
 #container {
   text-align: center;
 
@@ -33,35 +35,60 @@
 #boton{
   margin: 0 auto;
   margin-top: 30px;
-  margin-left: 700px;
-  margin-right: 700px;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+#img{
+  width: 10%;
+  height: 20%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 1px) and (max-width: 390px){
+  #boton{
+    margin: 0 auto;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 30px;
+  }
+  
+  #img{
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    
+  }
+}
+
+@media screen and (min-width:391px) and (max-width: 810px){
   #boton{
     margin: 0 auto;
     margin-left: 90px;
     margin-right: 90px;
     margin-top: 30px;
   }
-  
+  #img{
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 
-@media screen and (min-width:391px) and (max-width: 820px){
+@media screen and (min-width:811px) and (max-width: 1368px){
   #boton{
     margin: 0 auto;
     margin-left: 250px;
     margin-right: 250px;
     margin-top: 30px;
   }
-}
 
-@media screen and (min-width:821px) and (max-width: 1368px){
-  #boton{
+  #img{
+    width: 30%;
+    height: 30%;
     margin: 0 auto;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 30px;
   }
 }
 
@@ -70,6 +97,13 @@
     margin: 0 auto;
     margin-left: 250px;
     margin-right: 250px;
+    margin-top: 30px;
+  }
+
+  #img{
+    width: 10%;
+    height: 20%;
+    margin: 0 auto;
     margin-top: 30px;
   }
 }

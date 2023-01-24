@@ -1,4 +1,5 @@
-<ion-header [translucent]="true">
+
+<ion-header [translucent]="true" id="headercolor">
   <ion-toolbar>
     <ion-title id="titulo">Inscripción</ion-title>
   </ion-toolbar>
@@ -7,18 +8,24 @@
 <ion-content>
   <form>
     <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" name="email" required></ion-input>
+    </ion-item>
+  
+    <br/>
+    <ion-item lines="full">
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input type="tel" name="tlf" required></ion-input>
+    </ion-item>
+    <br/>
+    <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
       <ion-input type="email" name="email" required></ion-input>
     </ion-item>
     <br/>
-    <ion-item lines="full">
-      <ion-label position="floating">Teléfono</ion-label>
-      <ion-input type="number" required></ion-input>
-    </ion-item>
-    <br/>
     <ion-item>
       <ion-textarea placeholder="Si tienes alguna duda, escríbela aquí." [autoGrow]="true"
-        value="">
+        >
       </ion-textarea>
     </ion-item>
   
@@ -28,4 +35,7 @@
       </ion-col>
     </ion-row>
   </form>
+  <ion-img src="../../assets/campuslogo-removebg-preview.png" id="img" alt="CampusFP"></ion-img>
+
 </ion-content>
+
