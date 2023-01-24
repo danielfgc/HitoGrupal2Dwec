@@ -1,0 +1,7 @@
+{
+  "name": "hitogrupal2dwec",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
