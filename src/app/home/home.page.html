@@ -1,20 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title id="titulo">Inscripción</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" name="email" required></ion-input>
+    </ion-item>
+    <br/>
+    <ion-item lines="full">
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+    <br/>
+    <ion-item>
+      <ion-textarea placeholder="Si tienes alguna duda, escríbela aquí." [autoGrow]="true"
+        value="">
+      </ion-textarea>
+    </ion-item>
+  
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block" id="boton">Enviar información</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>
