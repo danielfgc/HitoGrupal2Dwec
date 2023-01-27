@@ -1,0 +1,111 @@
+ion-content{
+    height: 100vh;
+  }
+  
+  #container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  #titulo{
+    text-align: center;
+  }
+  
+  #boton{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+  
+  #img{
+    width: 10%;
+    height: 20%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  @media screen and (min-width: 1px) and (max-width: 390px){
+    #boton{
+      margin: 0 auto;
+      margin-left: 65px;
+      margin-right: 65px;
+      margin-top: 30px;
+    }
+    
+    #img{
+      width: 30%;
+      height: 30%;
+      margin: 0 auto;
+      
+    }
+  }
+  
+  @media screen and (min-width:391px) and (max-width: 810px){
+    #boton{
+      margin: 0 auto;
+      margin-left: 90px;
+      margin-right: 90px;
+      margin-top: 30px;
+    }
+    #img{
+      width: 30%;
+      height: 30%;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (min-width:811px) and (max-width: 1368px){
+    #boton{
+      margin: 0 auto;
+      margin-left: 250px;
+      margin-right: 250px;
+      margin-top: 30px;
+    }
+  
+    #img{
+      width: 30%;
+      height: 30%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (min-width:1369px) and (max-width: 1800px){
+    #boton{
+      margin: 0 auto;
+      margin-left: 250px;
+      margin-right: 250px;
+      margin-top: 30px;
+    }
+  
+    #img{
+      width: 10%;
+      height: 20%;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }

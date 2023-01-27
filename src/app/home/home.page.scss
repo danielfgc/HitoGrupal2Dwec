@@ -30,8 +30,28 @@ ion-content{
   text-decoration: none;
 }
 
-#titulo{
+#imagetitle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+h2{
   text-align: center;
+}
+
+#h2title{
+  font-style: bold;
+}
+
+#buttoncenter{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #boton{
