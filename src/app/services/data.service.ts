@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+  constructor(private db: AngularFirestore) {}
 
-  constructor(private fireStore: AngularFireDatabase) {}
   register(nombre: String, email:String, telefono:String,comentario:String){
-    return this.fireStore.list('usuarios').push({
+    const usuarios = this.db.collection("usuarios");
+    return usuarios.add({
       nombre: nombre,
-      email: email,
+      email: email, 
       telefono:telefono,
       comentario:comentario
       // Other info you want to add here
-    });
+  })
+
   }
 }

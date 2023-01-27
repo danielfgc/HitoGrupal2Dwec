@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ionic-app-5985e": {
+      "hosting": {
+        "app": [
+          "ionic-app-5985e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ionic-app-5985e"
+  }
+}

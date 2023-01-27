@@ -1,23 +1,29 @@
-<form>
+
   <ion-item lines="full">
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" name="email" required></ion-input>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="nombre" required></ion-input>
   </ion-item>
+
   <br/>
   <ion-item lines="full">
     <ion-label position="floating">Teléfono</ion-label>
-    <ion-input type="number" required></ion-input>
+    <ion-input type="tel" [(ngModel)]="telefono" required></ion-input>
+  </ion-item>
+  <br/>
+  <ion-item lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" required></ion-input>
   </ion-item>
   <br/>
   <ion-item>
     <ion-textarea placeholder="Si tienes alguna duda, escríbela aquí." [autoGrow]="true"
-      value="">
+    [(ngModel)]="comentario">
     </ion-textarea>
   </ion-item>
 
   <ion-row>
     <ion-col>
-      <ion-button type="submit" color="danger" expand="block" id="boton">Enviar información</ion-button>
+      <ion-button type="submit" color="danger" expand="block" id="boton" (click)="registerUser()">Enviar información</ion-button>
     </ion-col>
   </ion-row>
-</form>
+<p>{{respuesta}}</p>
