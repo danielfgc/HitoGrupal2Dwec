@@ -1,17 +1,25 @@
+<ion-header [translucent]="true" id="headercolor">
+  <ion-toolbar>
+    <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+    <ion-title><img src="../../assets/campushorizontal.png" alt="campusfp" id="imagetitle"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h3>Nunca compartiremos tu información con nadie</h3>
 
   <ion-item lines="full">
-    <ion-label position="floating">Nombre</ion-label>
+    <ion-label position="floating">Nombre:</ion-label>
     <ion-input type="text" [(ngModel)]="nombre" required></ion-input>
   </ion-item>
 
   <br/>
   <ion-item lines="full">
-    <ion-label position="floating">Teléfono</ion-label>
+    <ion-label position="floating">Teléfono:</ion-label>
     <ion-input type="tel" [(ngModel)]="telefono" required></ion-input>
   </ion-item>
   <br/>
   <ion-item lines="full">
-    <ion-label position="floating">Email</ion-label>
+    <ion-label position="floating">Email:</ion-label>
     <ion-input type="email" [(ngModel)]="email" required></ion-input>
   </ion-item>
   <br/>
@@ -26,4 +34,4 @@
       <ion-button type="submit" color="danger" expand="block" id="boton" (click)="registerUser()">Enviar información</ion-button>
     </ion-col>
   </ion-row>
-<p>{{respuesta}}</p>
+<p id="respuesta">{{respuesta}}</p>

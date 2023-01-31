@@ -18,8 +18,8 @@ export class FormularioComponent implements OnInit {
   constructor(private dataService: DataService) {}
   registerUser(){
     this.dataService.register(this.nombre, this.email, this.telefono, this.comentario)
-    .then(()=>{this.respuesta="Añadido correctamente"})
-    .catch(()=>{this.respuesta="No se pudo añadir, intentelo de nuevo"})
+    .then(()=>{this.respuesta="¡Información enviada!"})
+    .catch(()=>{this.respuesta="No se pudo añadir, inténtelo de nuevo"})
   }
   ngOnInit() {}
 
